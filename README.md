@@ -34,7 +34,22 @@ cd /DiscordMemeBot
 npm install
 ```
 ### Step 4) getting your bot ready for start
-First thing you need is editing .env file to add your bot token
-![first img](https://imgur.com/8IvPU8H)
+First thing you need is editing .env file to add your bot token in format
+```
+TOKEN=insertyourtokenhere
+```
+Second thing you need to edit is channel you want the bot to post in
+In index.ts edit client.channels.cache.get('PASTE_CHANNEL_ID_HERE') with discord server channel ID
 
+### Step 5) install typescript
+```
+npm install -g typescript ts-node
+```
+```
+tsc -init
+```
 
+## To start off your bot you need to run command
+```
+ts-node index.ts
+```
