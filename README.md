@@ -35,6 +35,6 @@ npm install
 ```
 ### Step 4) getting your bot ready for start
 First thing you need is editing .env file to add your bot token
-!(https://imgur.com/8IvPU8H)
+![](https://imgur.com/8IvPU8H)
 
 
