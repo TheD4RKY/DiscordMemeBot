@@ -20,9 +20,9 @@ client.on('ready', () => {
     client.user.setActivity('DEPRESÍKY', { type: 'PLAYING' });
     
     setInterval(() => {
-        let chosenFile = files[Math.floor(Math.random() * files.length)];
         for(let i = 0; i < 10; i++) {
-       (client.channels.cache.get('PASTE_CHANNEL_ID_HERE') as TextChannel).send({ files: ["./public/" + chosenFile]});
+            let chosenFile = files[Math.floor(Math.random() * files.length)];
+       (client.channels.cache.get('INSERT_YOUR_CHANNEL_ID_HERE') as TextChannel).send({ files: ["./public/" + chosenFile]});
     }
 }, 10000)
     
