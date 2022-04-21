@@ -22,7 +22,7 @@ client.on('ready', () => {
     
     setInterval(() => {
         let chosenFile = files[Math.floor(Math.random() * files.length)];
-       (client.channels.cache.get('877280550015078443') as TextChannel).send({ files: ["./public/" + chosenFile]});
+       (client.channels.cache.get('PASTE_CHANNEL_ID_HERE') as TextChannel).send({ files: ["./public/" + chosenFile]});
     }
         , 10000)
     
