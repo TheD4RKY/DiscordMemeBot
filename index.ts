@@ -1,4 +1,4 @@
-import DiscordJS, { Intents, MessageAttachment, Client, TextChannel } from 'discord.js'
+import DiscordJS, { Intents, TextChannel } from 'discord.js'
 import dotenv from 'dotenv'
 dotenv.config();
 const fs = require('fs')
@@ -8,7 +8,6 @@ const client = new DiscordJS.Client({
         Intents.FLAGS.GUILDS,
         Intents.FLAGS.GUILD_MEMBERS,
         Intents.FLAGS.GUILD_MESSAGES,
-
     ]
 });
 
@@ -17,7 +16,7 @@ const client = new DiscordJS.Client({
 
 
 client.on('ready', () => {
-    console.log('I am ready!')
+    console.log('Bot is running')
     client.user.setActivity('DEPRESÍKY', { type: 'PLAYING' });
     
     setInterval(() => {
@@ -28,15 +27,5 @@ client.on('ready', () => {
     
 });
 
-
-
-
-client.on('messageCreate', (message) => {
-    if (message.content === 'ping') {
-        message.reply({
-            content: 'pong',
-        })
-            }
-    })
 
 client.login(process.env.TOKEN);
